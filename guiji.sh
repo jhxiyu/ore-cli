@@ -19,7 +19,7 @@ while true; do
             
             # 嘗試轉賬直到成功
             while true; do
-                spl-token transfer --owner "${OWNER_KEY}" --url https://late-burned-valley.solana-mainnet.quiknode.pro/3008f13829394f22a8aa1724982865a34fdf34f0/ oreoN2tQbHXVaZsr3pf66A48miqcBXCDJozganhEJgz ALL "$MAIN_ADDR" --fund-recipient
+                spl-token transfer --owner "${OWNER_KEY}" --url https://late-burned-valley.solana-mainnet.quiknode.pro/3008f13829394f22a8aa1724982865a34fdf3/ oreoN2tQbHXVaZsr3pf66A48miqcBXCDJozganhEJgz ALL "$MAIN_ADDR" --fund-recipient
                 if [ $? -eq 0 ]; then
                     echo "id"${i}".json 轉賬成功."
                     break
