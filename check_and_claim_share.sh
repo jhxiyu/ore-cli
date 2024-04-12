@@ -20,7 +20,7 @@ check_and_claim() {
     echo "奖励大于 $REWARD_THRESHOLD ORE，尝试认领..."
     # 执行认领命令，并将返回值赋给变量
   
-    claim_output=$(ore --rpc https://withered-icy-knowledge.solana-mainnet.quiknode.pro/c2fe737f4a298965fc13a02ce74babfff4d9d773/ --keypair "${keyfile}" --priority-fee 5000000 claim)
+    claim_output=$(ore --rpc https://late-burned-valley.solana-mainnet.quiknode.pro/3008f13829394f22a8aa1724982865a34fdf34f0/ --keypair "${keyfile}" --priority-fee 5000000 claim)
     echo "认领结果：$claim_output"
 
     # 检查认领命令的返回值
